@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+
+ <div class="module">
+<h2>Оценки</h2>
+    <input type="text" id="gradesInput" placeholder="5, 4, 3...">
+            <button onclick="runGrades()">Посчитать</button>
+            <div id="gradesResult" class="res"></div>
+</div>
+
+<div class="module">
+<h2>Градусы</h2>
+ <input type="number" id="tempInput">
+<select id="tempMode">
+<option value="CtoF">C в F</option>
+<option value="FtoC">F в C</option>
+</select>
+<button onclick="runTemp()">ОК</button>
+<div id="tempResult" class="res"></div>
+</div>
+
+<div class="module">
+<h2>Список дел</h2>
+ <input type="text" id="todoInput">
+<button onclick="runTodo()">Добавить</button>
+<div id="todoList"></div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
